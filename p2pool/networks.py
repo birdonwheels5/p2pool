@@ -503,7 +503,7 @@ nets = dict(
         PARENT=networks.nets['myriad_scrypt'],
         SHARE_PERIOD=15, # seconds
         CHAIN_LENGTH=24*60*60//10, # shares
-        REAL_CHAIN_LENGTH=12*60*60//10, # shares
+        REAL_CHAIN_LENGTH=24*60*60//10, # shares
         TARGET_LOOKBEHIND=200, # shares
         SPREAD=60, # blocks
         IDENTIFIER='fafa54457667eeee'.decode('hex'),
@@ -513,7 +513,7 @@ nets = dict(
         MAX_TARGET=2**256//2**20 - 1,
         PERSIST=True,
         WORKER_PORT=5556,
-        BOOTSTRAP_ADDRS='birdspool.no-ip.org nz.p2pool.geek.nz'.split(' '),
+        BOOTSTRAP_ADDRS='birdspool.no-ip.org nz.p2pool.geek.nz uk.p2pool.geek.nz'.split(' '),
         ANNOUNCE_CHANNEL='#p2pool-alt',
         VERSION_CHECK=lambda v: True,
     ),
